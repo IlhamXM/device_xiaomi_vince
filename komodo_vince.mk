@@ -24,11 +24,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common Havoc OS stuff.
+# Inherit some common Komodo OS stuff.
 $(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+CURRENT_BUILD_TYPE := nogapps
 
 # official tag
-KOMODO_BUILD_TYPE := Official
+KOMODO_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
